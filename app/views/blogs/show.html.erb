@@ -1,14 +1,13 @@
-
 <header class="header">
 <ul clearfix>
   <li class="left">tweet sample</li>
 </ul>
 </header>
 <section class="about">
-<h2>tweetを投稿する</h2>
-  <%= render 'form' %>
-  <%= link_to "tweet一覧にもどる", blogs_path %>
+<h1>tweet詳細</h1>
+<p>tweet内容: <%= @blog.content %></p>
+<%= link_to 'tweet一覧に戻る', blogs_path %>
 </section>
 <footer>
-  <p>運営 tsukinoki
+<p>運営 tsukinoki
 </footer>

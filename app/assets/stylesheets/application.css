@@ -13,3 +13,111 @@
  *= require_tree .
  *= require_self
  */
+
+ * { 
+    margin: 0px; 
+    padding: 0px; 
+}
+
+ html {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    height: 100%; 
+  }
+ 
+  header {
+    background-color: #59b7e2;
+    height: 50px;
+    font-size: 1rem;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header li  {
+    display: block;
+    padding: 15px;
+    color: white;
+    list-style: none;
+    float:left;
+  }
+
+  .about h1 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .about {
+    height: 500px;
+    min-width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+
+  .about table {
+    width: 90%;
+    text-align: left;
+    padding: 10px 60px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  .about p {
+    padding-bottom: 20px;
+  }
+
+  .about h2 {
+    padding-bottom: 20px;
+  }
+
+  td.contents {
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+
+  .new {
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+  }
+  
+  .btn {
+    background: #67c5ff;
+    color: white;
+    margin: 30px;
+  }
+
+  footer {
+    background-color: #59b7e2;
+    height: 50px;
+    font-size: 0.8rem;
+    width: 100%;
+    position: absolute;
+    margin-top: auto;
+    bottom: 0;
+  }
+
+  footer p{
+    line-height: 22px;
+    /* vertical-align: middle; */
+    color:white;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    margin-top: 15px;
+  }

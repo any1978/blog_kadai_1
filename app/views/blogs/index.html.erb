@@ -1,2 +1,30 @@
-<h1>Blogs#index</h1>
-<p>Find me in app/views/blogs/index.html.erb</p>
+<html>
+<body>
+  <header class="header">
+    <ul clearfix>
+      <li class="left">tweet sample</li>
+    </ul>
+  </header>
+  <section class="about">
+    <h1>tweet 一覧</h1>
+    <p><%= notice %></p>
+    <table>
+      <tr>
+        <th>tweet内容</th>
+      </tr>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td class = "contents"><%= blog.content %></td>
+        <td class = "contents"><%= link_to '内容を確認する', blog_path(blog.id) %></td>
+        <td class = "contents"><%= link_to '編集する', edit_blog_path(blog.id),data: { confirm: '本当に編集していいですか？' }  %></td>
+        <td class = "contents"><%= link_to '削除する', blog_path(blog.id), method: :delete, data: { confirm: '本当に削除していいですか？' }  %></td>
+      </tr>
+    <% end %>
+    </table>
+    <%= link_to '新しくtweetする', new_blog_path , class:'btn'%>
+  </section>
+  <footer>
+    <p>運営 tsukinoki
+  </footer>
+</body>
+</html>
